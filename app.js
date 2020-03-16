@@ -1,12 +1,12 @@
-var createError = require('http-errors');
-var express = require('express');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-var compression = require('compression')
+const createError = require('http-errors');
+const express = require('express');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const compression = require('compression')
 
-var testRouter = require('./routes/test');
+const testRouter = require('./routes/test');
 
-var app = express();
+const app = express();
 
 app.use(compression())
 app.use(logger('dev'));
