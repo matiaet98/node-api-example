@@ -1,4 +1,4 @@
-FROM node:13-alpine
+FROM node:14-alpine
 LABEL maintainer="matiaet98"
 LABEL version="0.0.1"
 WORKDIR /app
@@ -7,4 +7,5 @@ RUN npm install
 RUN npm ci --only=production
 EXPOSE 3000
 ENV NODE_ENV=production
-CMD [ "node", "./bin/www" ]
+ENTRYPOINT ["node", "./bin/www"]
+

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "build-docker": "docker build --force-rm -t matiaet98/node-api-example:latest ."
+    "build-docker": "docker build --force-rm -t node-api-example:latest ."
   },
   "dependencies": {
     "compression": "^1.7.4",

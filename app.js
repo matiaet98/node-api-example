@@ -7,6 +7,7 @@ const helmet = require('helmet')
 const cors = require('cors')
 
 const testRouter = require('./routes/test')
+const statusRouter = require('./routes/status')
 
 const app = express()
 
@@ -20,6 +21,7 @@ app.use(cookieParser())
 
 
 app.use('/api/v1/test', testRouter)
+app.use('/api/v1/status', statusRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

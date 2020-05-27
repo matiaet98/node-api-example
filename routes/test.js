@@ -1,15 +1,13 @@
 const express = require('express');
-const { Router } = require('express');
 const router = express.Router();
 
 /* GET send test response. */
 router.get('/', function(req, res, next) {
-  console.log(req)
+  console.log(req);
   res.json({
-    response: "hello world",
+    response: "test api 1 OK",
     api: "expressjs",
-    version: "1",
-    auth: req.headers.authorization
+    version: "1"
   })
 });
 
